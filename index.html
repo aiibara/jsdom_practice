@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List of car</title>
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+        <h1>Parkir Qu</h1>
+
+        <div>
+            <form id="addCarForm">
+                <div>
+                    <div><label for="owner">Owner:</label></div>
+                    <input type="text" placeholder="name" id="owner"/>
+                </div>
+                
+                <div>
+                    <div><label for="platnum">Plat no:</label></div>
+                    <input type="text" placeholder="plat no." id="platnum"/>
+                </div>
+                
+                <div>
+                    <div><label for="brand">Brand:</label></div>
+                    <select id="brand">
+                        <option>Tesla</option>
+                        <option>Mercedes</option>
+                        <option>Rolls Royce</option>
+                        <option>BMW</option>
+                        <option>Toyota</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Add"/>
+            </form>
+        </div>
+
+        <div class="card_container" id="card_container">
+            <div class="car_card">
+                <img class="car_pic" src="/assets/icons8-car-roof-box-96.png" />
+                <div>
+                    <p>B 1232 OD</p>
+                    <p>Toyota</p>
+                    <p id="owner">Owner: <strong>Ucok</strong></p>
+                </div>
+                <div class="deleteBtn">x</div>
+            </div>
+        </div>
+    </body>
+</html>
